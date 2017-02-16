@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:layout_marginBottom="20dp"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.example.administrator.yangtao.modules.shouye.widget.ShouyeGridview
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/shouye_sort_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.example.administrator.yangtao.modules.shouye.widget.ShouyeGridview>
+</RelativeLayout>

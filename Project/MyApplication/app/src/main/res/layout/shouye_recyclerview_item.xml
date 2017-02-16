@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="280dp">
+    <android.support.v7.widget.CardView
+        android:layout_margin="30dp"
+        android:id="@+id/shouview_cardview"
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#0ff"
+        android:foreground="?android:selectableItemBackground"
+        android:layout_height="280dp">
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="280dp">
+
+            <ImageView
+                android:id="@+id/shouye_recyclerview_image"
+                android:layout_width="170dp"
+                android:layout_height="205dp"
+                android:src="@mipmap/ic_launcher"
+                />
+            <TextView
+                android:textColor="#000"
+                android:layout_below="@id/shouye_recyclerview_image"
+                android:id="@+id/shouye_recyclerview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名"
+                />
+            <TextView
+                android:textColor="#f00"
+                android:layout_below="@id/shouye_recyclerview_title"
+                android:id="@+id/shouye_recyclerview_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/mydiscount_item_iv"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/mong" />
+
+
+        <TextView
+            android:id="@+id/mydiscount_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/mydiscount_item_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/mydiscount_item_iv"
+            android:text="新人礼10元无门槛"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mydiscount_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mydiscount_item_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/mydiscount_item_iv"
+            android:text="截至时间"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/mydiscount_item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/mydiscount_item_title"
+            android:text="10元"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignTop="@id/mydiscount_item_iv"
+            android:layout_toRightOf="@id/mydiscount_item_value"
+            android:background="#c4c5c7"></View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignTop="@id/mydiscount_item_iv"
+            android:layout_toRightOf="@id/mydiscount_item_value"
+            android:background="#c4c5c7"></View>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#c4c5c7"></View>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

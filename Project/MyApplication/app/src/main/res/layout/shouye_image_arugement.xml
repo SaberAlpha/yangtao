@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:background="@mipmap/ic_launcher"
+        android:id="@+id/shouye_image_item"
+       android:scaleType="centerCrop"
+        android:layout_width="200dp"
+        android:layout_height="250dp" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="名称"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arugment_title"/>
+        <RelativeLayout
+           android:layout_marginTop="5dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@mipmap/ic_launcher"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/arugment_item_image"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="标题"
+                android:layout_marginLeft="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/arugment_name"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:text="数量"
+                android:layout_height="wrap_content"
+                android:id="@+id/arugment_num"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/kf5_jump_icon"/>
+        </RelativeLayout>
+
+</LinearLayout>

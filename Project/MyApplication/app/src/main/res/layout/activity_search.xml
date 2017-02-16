@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <LinearLayout
+        android:background="#66CC99"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/search_back"
+            android:layout_width="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/goback"
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/searchtext_editor"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:hint="搜索商品"
+                android:inputType="text"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/kf5_img_search"
+                android:drawablePadding="5dp"
+                android:background="@drawable/search_shape"
+                android:layout_height="30dp" />
+
+        </RelativeLayout>
+
+      <TextView
+          android:layout_marginLeft="5dp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:paddingRight="5dp"
+          android:paddingLeft="5dp"
+          android:textColor="#fff"
+          android:background="@drawable/searchtext_shape"
+          android:id="@+id/search_text"
+          android:layout_width="wrap_content"
+          android:layout_height="30dp"
+          android:text="搜索"/>
+
+    </LinearLayout>
+
+</LinearLayout>

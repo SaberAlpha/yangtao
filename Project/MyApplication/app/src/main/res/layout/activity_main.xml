@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <View
+        android:layout_below="@id/container"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0ff"/>
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:id="@+id/radio_group"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/radiobutton_rank"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+
+            android:drawableTop="@drawable/mianbutton_rank"
+            android:text="销量耪"
+            android:textColor="@drawable/maintextcolor"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/radiobutton_party"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/mianbutton_party"
+            android:textColor="@drawable/maintextcolor"
+            android:text="派对"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/radiobutton_shouye"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/mianbutton_shouye"
+            android:textColor="@drawable/maintextcolor"
+            android:checked="true"
+            android:text="首页"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/radiobutton_message"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+           android:drawableTop="@drawable/mianbutton_message"
+            android:textColor="@drawable/maintextcolor"
+            android:text="消息"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/radiobutton_mine"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/mianbutton_user"
+            android:textColor="@drawable/maintextcolor"
+            android:text="我"
+            android:layout_height="wrap_content"
+            />
+    </RadioGroup>
+
+</RelativeLayout>

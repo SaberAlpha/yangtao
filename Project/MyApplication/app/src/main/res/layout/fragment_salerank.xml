@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/header"
+        android:background="#66CC99"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/fen_lei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fenlei"
+            android:layout_gravity="center"
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+            <EditText
+                android:id="@+id/rank_searchtext"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:hint="搜索商品"
+                android:inputType="text"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/umeng_socialize_search_icon"
+                android:drawablePadding="5dp"
+                android:background="@drawable/search_shape"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/rank_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cart"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"></ListView>
+    <ImageView
+        android:id="@+id/progress_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/progress_animation"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

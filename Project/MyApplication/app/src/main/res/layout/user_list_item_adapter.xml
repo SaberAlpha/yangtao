@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="275dp">
+    <RelativeLayout
+        android:id="@+id/left_item"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        >
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/left_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/logo"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/left_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="过冬肌肤过冬肤"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/left_img"/>
+
+        <TextView
+            android:id="@+id/left_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/red"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/right_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/logo"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/right_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/right_img"
+            android:text="过冬肌肤过冬肌肤过冬肌肤过冬肌肤过冬肌肤" />
+
+        <TextView
+            android:id="@+id/right_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="23"
+            android:textColor="@color/red"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
